@@ -1,0 +1,14 @@
+Element 10 inserted successfully.
+Element 20 inserted successfully.
+Element 30 inserted successfully.
+Element 40 inserted successfully.
+Element 30 found at index 2.
+Element 20 deleted successfully.
+Elements in the list: 10 30 40 
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+
+
+
