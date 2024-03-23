@@ -1,0 +1,12 @@
+Enter a Prefix expression: +3*24:11
+Result of Prefix expression: 11
+Enter an Infix expression: ((6+3)*4)/3+4:
+Result of Infix expression: 16
+Enter a Postfix expression: 545*+:
+Result of Postfix expression: 25
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+
+
