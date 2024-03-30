@@ -1,0 +1,13 @@
+Enter Infix expression: 2+3
+Postfix: 23+
+Prefix: +23
+Enter Postfix Expression: 3+
+Infix: 3
+Enter Prefix Expression: +3
+Infix: 3
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+
+
