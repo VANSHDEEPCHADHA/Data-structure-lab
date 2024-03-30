@@ -1,0 +1,24 @@
+10 is added in queue !!!!
+
+20 is added in queue !!!!
+
+30 is added in queue !!!!
+
+40 is added in queue !!!!
+
+50 is added in queue !!!!
+10      20      30      40      50
+
+Dequeued item: 10
+
+Dequeued item: 20
+30      40      50
+
+60 is added in queue !!!!
+
+70 is added in queue !!!!
+30      40      50      60      70
+
+
+...Program finished with exit code 10
+Press ENTER to exit console.
