@@ -1,0 +1,7 @@
+Original list: 4 1 2 3 
+Searching for 2: 2 found
+List after deletion: 4 1 2 
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
