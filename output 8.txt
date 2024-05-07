@@ -1,0 +1,8 @@
+List: 25 20 15 10 5
+Node with data 10 deleted successfully
+List: 25 20 15 5 
+Node with data 15 found
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
