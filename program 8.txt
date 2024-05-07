@@ -1,0 +1,115 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Define the structure for a doubly linked list node
+struct Node {
+    int data;
+    struct Node* prev;
+    struct Node* next;
+};
+
+// Function to create a new node
+struct Node* createNode(int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    if (newNode == NULL) {
+        printf("Memory allocation failed\n");
+        exit(1);
+    }
+    newNode->data = data;
+    newNode->prev = NULL;
+    newNode->next = NULL;
+    return newNode;
+}
+
+// Function to insert a node at the beginning of the list
+void insertAtBeginning(struct Node** head, int data) {
+    struct Node* newNode = createNode(data);
+    if (*head == NULL) {
+        *head = newNode;
+    } else {
+        newNode->next = *head;
+        (*head)->prev = newNode;
+        *head = newNode;
+    }
+}
+
+// Function to delete a node from the list
+void deleteNode(struct Node** head, int key) {
+    if (*head == NULL) {
+        printf("List is empty\n");
+        return;
+    }
+
+    struct Node* temp = *head;
+    while (temp != NULL) {
+        if (temp->data == key) {
+            if (temp->prev != NULL) {
+                temp->prev->next = temp->next;
+            } else {
+                *head = temp->next;
+            }
+            if (temp->next != NULL) {
+                temp->next->prev = temp->prev;
+            }
+            free(temp);
+            printf("Node with data %d deleted successfully\n", key);
+            return;
+        }
+        temp = temp->next;
+    }
+
+    printf("Node with data %d not found\n", key);
+}
+
+// Function to search for a node with given data
+struct Node* searchNode(struct Node* head, int data) {
+    struct Node* temp = head;
+    while (temp != NULL) {
+        if (temp->data == data) {
+            return temp;
+        }
+        temp = temp->next;
+    }
+    return NULL;
+}
+
+// Function to display the list
+void displayList(struct Node* head) {
+    struct Node* temp = head;
+    printf("List: ");
+    while (temp != NULL) {
+        printf("%d ", temp->data);
+        temp = temp->next;
+    }
+    printf("\n");
+}
+
+int main() {
+    struct Node* head = NULL;
+
+    // Inserting elements
+    insert At Beginning(&head, 5);
+    insert At Beginning(&head, 10);
+    insert At Beginning(&head, 15);
+    insert At Beginning(&head, 20);
+    insert At Beginning(&head, 25);
+
+    // Displaying the list
+    display List(head);
+
+    // Deleting a node
+    delete Node(&head, 10);
+
+    // Displaying the list after deletion
+    display List(head);
+
+    // Searching for a node
+    struct Node* found Node = search Node(head, 15);
+    if (found Node != NULL) {
+        printf("Node with data %d found\n", found Node->data);
+    } else {
+        printf("Node not found\n");
+    }
+
+    return 0;
+}
