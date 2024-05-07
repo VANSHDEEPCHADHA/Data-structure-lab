@@ -1,0 +1,7 @@
+Initial circular linked list: 1 2 3 4 5 
+After deleting 3: 1 2 4 5 
+4 found in the list
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
