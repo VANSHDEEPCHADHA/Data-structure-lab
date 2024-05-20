@@ -1,0 +1,23 @@
+1. Push
+2. Pop
+3. Exit
+Enter your choice: 1
+Enter element to push: 2
+Pushed 2 onto the stack.
+
+1. Push
+2. Pop
+3. Exit
+Enter your choice: 2
+Popped 2 from the stack.
+
+1. Push
+2. Pop
+3. Exit
+Enter your choice: 3
+Exiting program.
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+
